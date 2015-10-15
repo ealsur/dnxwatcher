@@ -9,19 +9,6 @@
 		"workspaceContains:global.json"	
 	],
 	"main": "./out/extension",
-	"contributes": {
-		"configuration": {
-			"type": "object",
-			"title": "DNX Watcher",
-			"properties": {
-				"dnxwatcher.watchForChanges": {
-					"type": "boolean",
-					"default": true,
-					"description": "Enable DNX Watch for DNX SDK changes."
-				}
-			}			
-		}				
-	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
 		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"

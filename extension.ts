@@ -31,6 +31,7 @@ export function activate() {
 			getCurrentSdkVersion();
 			if(localCurrentSdkVersion != currentSdkVersion){
 				vscode.commands.executeCommand("o.restart");
+				console.log('DNX Watcher: Omnisharp restarted');
 			}			
 		});
 	});	
