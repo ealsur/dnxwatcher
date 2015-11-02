@@ -1,7 +1,8 @@
 {
 	"name": "dnxwatcher",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "ealsur",
+	"description": "Watch for changes on your global.json file",
 	"engines": {
 		"vscode": "*"
 	},
