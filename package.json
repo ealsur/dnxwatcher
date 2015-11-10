@@ -1,10 +1,10 @@
 {
 	"name": "dnxwatcher",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "ealsur",
 	"description": "Watch for changes on your global.json file",
 	"engines": {
-		"vscode": "*"
+		"vscode": "0.10.x"
 	},
 	"activationEvents": [
 		"workspaceContains:global.json"	
@@ -15,6 +15,6 @@
 		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
 	},
 	"devDependencies": {
-		"vscode": "*"
+		"vscode": "^0.10.1"
 	}
 }
