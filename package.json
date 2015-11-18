@@ -1,17 +1,17 @@
 {
 	"name": "dnxwatcher",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "ealsur",
 	"description": "Watches for SDK changes on your global.json file.",
 	"displayName": "DNX version watcher",
 	 "galleryBanner": {
-        "color": "#FFFFF",
+        "color": "#000000",
         "theme": "dark"
     },
 	"categories": [
         "Other"
     ],
-	"icon": "images/icon.png",
+	"icon": "images/icon.svg",
 	"repository": {
         "type": "git",
         "url": "https://github.com/ealsur/dnxwatcher.git"
