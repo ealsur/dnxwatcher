@@ -1,6 +1,6 @@
 import * as vscode from 'vscode'; 
 
-export function activate() { 
+export function activate(context: vscode.ExtensionContext) { 
 	console.log('DNX Watcher: Detected your "global.json" file correctly.');
 	var currentSdkVersion=null;
 	var path = vscode.workspace.rootPath+"/global.json";
@@ -27,7 +27,8 @@ export function activate() {
 	
 	//Watcher for file changes
 	
-	var watcher = vscode.workspace.createFileSystemWatcher(path);		
+	var watcher = vscode.workspace.createFileSystemWatcher(path);
+	context.subscriptions.push(watcher);		
 	watcher.onDidChange(function(e){		
 		console.log('DNX Watcher: "global.json" file changed');
 		var localCurrentSdkVersion = currentSdkVersion;
