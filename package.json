@@ -1,6 +1,6 @@
 {
 	"name": "dnxwatcher",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "ealsur",
 	"description": "Watches for SDK changes on your global.json file.",
 	"displayName": "DNX version watcher",
